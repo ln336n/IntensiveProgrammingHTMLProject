@@ -14,7 +14,7 @@ body {
     font-family: "Courier New", monospace;
 }
 
-
+/* Header box */
 .header-box {
     position: fixed;
     top: 20px;
@@ -25,34 +25,21 @@ body {
     font-size: 14px;
 }
 
-
+/* Main panel */
 .panel {
-    width: 260px;
-    min-height: 100vh;
+    width: 300px;
+    height: 100vh;
     background: #fffdf8;
-    border-left: 8px solid #7a1c1c;
-    border-right: 8px solid #7a1c1c;
-    padding-top: 120px;
+    border-left: 10px solid #7a1c1c;
+    border-right: 10px solid #7a1c1c;
+    overflow-y: scroll;
 }
 
-.band {
-    display: grid;
-    grid-template-columns: repeat(5, 16px);
-    gap: 4px;
-    justify-content: center;
-    margin: 40px 0;
+/* SVG styling */
+svg {
+    display: block;
+    margin: auto;
 }
-
-
-.stitch {
-    width: 16px;
-    height: 16px;
-}
-
-.red { background: #8B0000; }
-.gold { background: #c9a227; }
-.black { background: #000; }
-.empty { background: transparent; }
 </style>
 </head>
 
@@ -66,38 +53,67 @@ Tatreez Project
 
 <div class="panel">
 
+<!-- LONG REPEATING TATREEZ PATTERN -->
+<svg width="260" height="2000" viewBox="0 0 260 2000">
 
-<div class="band">
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="gold"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="gold"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-</div>
+<!-- background -->
+<rect width="260" height="2000" fill="#fffdf8"/>
 
-<div class="band">
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="gold"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="gold"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-</div>
+<!-- REPEATING DIAMOND MOTIF -->
+<g transform="translate(130,50)">
+    
+    <!-- function-like repetition manually -->
+    
+    <!-- ROW LOOP -->
+    <!-- Copy-paste blocks downward -->
+    
+    <!-- Pattern Unit -->
+    <g id="motif">
+        <!-- outer diamond -->
+        <polygon points="0,-20 20,0 0,20 -20,0" fill="#8B0000"/>
+        
+        <!-- inner diamond -->
+        <polygon points="0,-10 10,0 0,10 -10,0" fill="#c9a227"/>
+        
+        <!-- center -->
+        <rect x="-3" y="-3" width="6" height="6" fill="black"/>
+    </g>
 
-<div class="band">
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="gold"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="gold"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-</div>
+    <!-- Repeat vertically -->
+    <use href="#motif" x="0" y="0"/>
+    <use href="#motif" x="0" y="60"/>
+    <use href="#motif" x="0" y="120"/>
+    <use href="#motif" x="0" y="180"/>
+    <use href="#motif" x="0" y="240"/>
+    <use href="#motif" x="0" y="300"/>
+    <use href="#motif" x="0" y="360"/>
+    <use href="#motif" x="0" y="420"/>
+    <use href="#motif" x="0" y="480"/>
+    <use href="#motif" x="0" y="540"/>
+    <use href="#motif" x="0" y="600"/>
+    <use href="#motif" x="0" y="660"/>
+    <use href="#motif" x="0" y="720"/>
+    <use href="#motif" x="0" y="780"/>
+    <use href="#motif" x="0" y="840"/>
+    <use href="#motif" x="0" y="900"/>
+    <use href="#motif" x="0" y="960"/>
+    <use href="#motif" x="0" y="1020"/>
+    <use href="#motif" x="0" y="1080"/>
+    <use href="#motif" x="0" y="1140"/>
+    <use href="#motif" x="0" y="1200"/>
+    <use href="#motif" x="0" y="1260"/>
+    <use href="#motif" x="0" y="1320"/>
+    <use href="#motif" x="0" y="1380"/>
+    <use href="#motif" x="0" y="1440"/>
+    <use href="#motif" x="0" y="1500"/>
+    <use href="#motif" x="0" y="1560"/>
+    <use href="#motif" x="0" y="1620"/>
+    <use href="#motif" x="0" y="1680"/>
+    <use href="#motif" x="0" y="1740"/>
+    <use href="#motif" x="0" y="1800"/>
+</g>
 
-<div class="band">
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="gold"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="gold"></div>
-<div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div>
-<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
-</div>
+</svg>
 
 </div>
 
