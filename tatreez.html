@@ -6,101 +6,90 @@
 <title>Tatreez Project</title>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f3efe6;
-        font-family: "Courier New", monospace;
-        display: flex;
-        justify-content: center;
-    }
+body {
+    margin: 0;
+    background-color: #f3efe6;
+    display: flex;
+    justify-content: center;
+    font-family: "Courier New", monospace;
+}
 
-    .header-box {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background: white;
-        border: 2px solid #8B0000;
-        padding: 12px 18px;
-        font-size: 14px;
-        line-height: 1.4;
-    }
+/* Header */
+.header-box {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: white;
+    border: 2px solid #8B0000;
+    padding: 12px 18px;
+    font-size: 14px;
+}
 
-    .tatreez-panel {
-        width: 240px;
-        min-height: 100vh;
-        background: #fffdf8;
-        border-left: 6px solid #7a1c1c;
-        border-right: 6px solid #7a1c1c;
-        padding-top: 150px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.15);
-    }
+/* Main panel */
+.panel {
+    width: 260px;
+    min-height: 100vh;
+    background: #fffdf8;
+    border-left: 8px solid #7a1c1c;
+    border-right: 8px solid #7a1c1c;
+    padding-top: 120px;
+}
 
-    /* GRID SYSTEM */
-    .band {
-        display: grid;
-        grid-template-columns: repeat(20, 10px);
-        grid-template-rows: repeat(20, 10px);
-        gap: 2px;
-        margin: 30px auto;
-        width: max-content;
-    }
+/* Each embroidery band */
+.band {
+    display: grid;
+    grid-template-columns: repeat(21, 10px);
+    gap: 2px;
+    justify-content: center;
+    margin: 25px 0;
+}
 
-    .stitch {
-        width: 10px;
-        height: 10px;
-        background-color: transparent;
-    }
+/* stitches */
+.stitch {
+    width: 10px;
+    height: 10px;
+}
 
-    /* COLORS */
-    .red { background-color: #8B0000; }
-    .gold { background-color: #c9a227; }
-    .black { background-color: #000; }
+.red { background: #8B0000; }
+.gold { background: #c9a227; }
+.black { background: #000; }
+
+/* spacing */
+.empty { background: transparent; }
 </style>
 </head>
 
 <body>
 
 <div class="header-box">
-    <strong>Professor Gamal ElDin</strong><br>
-    Core Topics in Non‑US History<br>
-    Tatreez Project
+<strong>Professor Gamal ElDin</strong><br>
+Core Topics in Non-US History<br>
+Tatreez Project
 </div>
 
-<div class="tatreez-panel">
+<div class="panel">
 
-    <!-- TRADITIONAL BETHLEHEM STAR BAND -->
-    <div class="band">
-        <!-- 20x20 grid — each row is written left to right -->
-        <!-- This creates a traditional tatreez star motif -->
+<!-- REPEAT THIS BAND MULTIPLE TIMES FOR LENGTH -->
 
-        <!-- Row 1 -->
-        <div></div><div></div><div></div><div class="red"></div><div class="red"></div><div></div><div></div><div></div><div class="gold"></div><div class="gold"></div><div></div><div></div><div></div><div class="red"></div><div class="red"></div><div></div><div></div><div></div><div></div><div></div>
+<div class="band">
+<!-- symmetric diamond motif -->
+<div class="empty"></div><div class="empty"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="empty"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="empty"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="empty"></div><div class="empty"></div>
 
-        <!-- Row 2 -->
-        <div></div><div></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div></div><div class="gold"></div><div class="red"></div><div class="red"></div><div class="gold"></div><div></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div></div><div></div><div></div><div></div>
+<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
 
-        <!-- Row 3 -->
-        <div></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div></div><div></div><div></div>
+<div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div>
+</div>
 
-        <!-- Row 4 -->
-        <div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div></div><div></div>
+<!-- duplicate band to create vertical tatreez -->
+<div class="band">
+<div class="empty"></div><div class="empty"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="empty"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="empty"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="empty"></div><div class="empty"></div>
 
-        <!-- Row 5 -->
-        <div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div>
+<div class="empty"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="empty"></div>
 
-        <!-- Row 6 -->
-        <div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div></div>
+<div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div>
+</div>
 
-        <!-- Row 7 -->
-        <div></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div></div><div></div><div></div>
-
-        <!-- Row 8 -->
-        <div></div><div></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="red"></div><div class="gold"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div class="black"></div><div class="gold"></div><div class="red"></div><div></div><div></div><div></div><div></div>
-
-        <!-- Rows 9–20 mirror rows 1–8 -->
-        <!-- You can duplicate rows 7 → 1 here if you want a longer band -->
-    </div>
+<!-- add more copies if you want it longer -->
 
 </div>
 
