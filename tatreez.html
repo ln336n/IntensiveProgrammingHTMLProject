@@ -8,9 +8,7 @@
 <style>
 body {
     margin: 0;
-    background-color: #f3efe6;
-    display: flex;
-    justify-content: center;
+    background-color: #7a1c1c; /* deep red tatreez background */
     font-family: "Courier New", monospace;
 }
 
@@ -23,22 +21,27 @@ body {
     border: 2px solid #8B0000;
     padding: 12px 18px;
     font-size: 14px;
+    z-index: 10;
 }
 
 /* Main panel */
 .panel {
-    width: 300px;
+    width: 100%;
     height: 100vh;
-    background: #fffdf8;
-    border-left: 10px solid #7a1c1c;
-    border-right: 10px solid #7a1c1c;
     overflow-y: scroll;
 }
 
-/* SVG styling */
+/* Center tapestry */
+.tatreez-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #7a1c1c;
+}
+
+/* SVG full tapestry */
 svg {
     display: block;
-    margin: auto;
 }
 </style>
 </head>
@@ -52,70 +55,455 @@ Tatreez Project
 </div>
 
 <div class="panel">
+<div class="tatreez-wrapper">
 
-<!-- LONG REPEATING TATREEZ PATTERN -->
-<svg width="260" height="2000" viewBox="0 0 260 2000">
+<svg width="1000" height="2600" viewBox="0 0 1000 2600">
 
-<!-- background -->
-<rect width="260" height="2000" fill="#fffdf8"/>
 
-<!-- REPEATING DIAMOND MOTIF -->
-<g transform="translate(130,50)">
+<rect width="1000" height="2600" fill="#7a1c1c"/>
+
+
+
+<rect x="60" y="40" width="880" height="2520" fill="none" stroke="#001f3f" stroke-width="16"/>
+
+<rect x="80" y="60" width="840" height="2480" fill="#7a1c1c" stroke="#001f3f" stroke-width="6"/>
+
+
+<g id="border-step">
     
-    <!-- function-like repetition manually -->
+    <rect x="0" y="0" width="6" height="6" fill="#001f3f"/>
+    <rect x="6" y="6" width="6" height="6" fill="#001f3f"/>
+    <rect x="12" y="12" width="6" height="6" fill="#001f3f"/>
+</g>
+
+<g id="border-diamond">
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#001f3f"/>
+</g>
+
+
+<g transform="translate(100,70)">
     
-    <!-- ROW LOOP -->
-    <!-- Copy-paste blocks downward -->
+    <use href="#border-step" x="0"/>
+    <use href="#border-step" x="24"/>
+    <use href="#border-step" x="48"/>
+    <use href="#border-step" x="72"/>
+    <use href="#border-step" x="96"/>
+    <use href="#border-step" x="120"/>
+    <use href="#border-step" x="144"/>
+    <use href="#border-step" x="168"/>
+    <use href="#border-step" x="192"/>
+    <use href="#border-step" x="216"/>
+    <use href="#border-step" x="240"/>
+    <use href="#border-step" x="264"/>
+    <use href="#border-step" x="288"/>
+    <use href="#border-step" x="312"/>
+    <use href="#border-step" x="336"/>
+    <use href="#border-step" x="360"/>
+    <use href="#border-step" x="384"/>
+    <use href="#border-step" x="408"/>
+    <use href="#border-step" x="432"/>
+    <use href="#border-step" x="456"/>
+    <use href="#border-step" x="480"/>
+    <use href="#border-step" x="504"/>
+    <use href="#border-step" x="528"/>
+    <use href="#border-step" x="552"/>
+    <use href="#border-step" x="576"/>
+    <use href="#border-step" x="600"/>
+    <use href="#border-step" x="624"/>
+    <use href="#border-step" x="648"/>
+    <use href="#border-step" x="672"/>
+    <use href="#border-step" x="696"/>
+
     
-    <!-- Pattern Unit -->
-    <g id="motif">
-        <!-- outer diamond -->
-        <polygon points="0,-20 20,0 0,20 -20,0" fill="#8B0000"/>
-        
-        <!-- inner diamond -->
-        <polygon points="0,-10 10,0 0,10 -10,0" fill="#c9a227"/>
-        
-        <!-- center -->
-        <rect x="-3" y="-3" width="6" height="6" fill="black"/>
+    <g transform="translate(0,26)">
+        <use href="#border-diamond" x="12"/>
+        <use href="#border-diamond" x="36"/>
+        <use href="#border-diamond" x="60"/>
+        <use href="#border-diamond" x="84"/>
+        <use href="#border-diamond" x="108"/>
+        <use href="#border-diamond" x="132"/>
+        <use href="#border-diamond" x="156"/>
+        <use href="#border-diamond" x="180"/>
+        <use href="#border-diamond" x="204"/>
+        <use href="#border-diamond" x="228"/>
+        <use href="#border-diamond" x="252"/>
+        <use href="#border-diamond" x="276"/>
+        <use href="#border-diamond" x="300"/>
+        <use href="#border-diamond" x="324"/>
+        <use href="#border-diamond" x="348"/>
+        <use href="#border-diamond" x="372"/>
+        <use href="#border-diamond" x="396"/>
+        <use href="#border-diamond" x="420"/>
+        <use href="#border-diamond" x="444"/>
+        <use href="#border-diamond" x="468"/>
+        <use href="#border-diamond" x="492"/>
+        <use href="#border-diamond" x="516"/>
+        <use href="#border-diamond" x="540"/>
+        <use href="#border-diamond" x="564"/>
+        <use href="#border-diamond" x="588"/>
+        <use href="#border-diamond" x="612"/>
+        <use href="#border-diamond" x="636"/>
+        <use href="#border-diamond" x="660"/>
+        <use href="#border-diamond" x="684"/>
+        <use href="#border-diamond" x="708"/>
+    </g>
+</g>
+
+
+<g transform="translate(100,2520) scale(1,-1)">
+    <use href="#border-step" x="0"/>
+    <use href="#border-step" x="24"/>
+    <use href="#border-step" x="48"/>
+    <use href="#border-step" x="72"/>
+    <use href="#border-step" x="96"/>
+    <use href="#border-step" x="120"/>
+    <use href="#border-step" x="144"/>
+    <use href="#border-step" x="168"/>
+    <use href="#border-step" x="192"/>
+    <use href="#border-step" x="216"/>
+    <use href="#border-step" x="240"/>
+    <use href="#border-step" x="264"/>
+    <use href="#border-step" x="288"/>
+    <use href="#border-step" x="312"/>
+    <use href="#border-step" x="336"/>
+    <use href="#border-step" x="360"/>
+    <use href="#border-step" x="384"/>
+    <use href="#border-step" x="408"/>
+    <use href="#border-step" x="432"/>
+    <use href="#border-step" x="456"/>
+    <use href="#border-step" x="480"/>
+    <use href="#border-step" x="504"/>
+    <use href="#border-step" x="528"/>
+    <use href="#border-step" x="552"/>
+    <use href="#border-step" x="576"/>
+    <use href="#border-step" x="600"/>
+    <use href="#border-step" x="624"/>
+    <use href="#border-step" x="648"/>
+    <use href="#border-step" x="672"/>
+    <use href="#border-step" x="696"/>
+
+    <g transform="translate(0,26)">
+        <use href="#border-diamond" x="12"/>
+        <use href="#border-diamond" x="36"/>
+        <use href="#border-diamond" x="60"/>
+        <use href="#border-diamond" x="84"/>
+        <use href="#border-diamond" x="108"/>
+        <use href="#border-diamond" x="132"/>
+        <use href="#border-diamond" x="156"/>
+        <use href="#border-diamond" x="180"/>
+        <use href="#border-diamond" x="204"/>
+        <use href="#border-diamond" x="228"/>
+        <use href="#border-diamond" x="252"/>
+        <use href="#border-diamond" x="276"/>
+        <use href="#border-diamond" x="300"/>
+        <use href="#border-diamond" x="324"/>
+        <use href="#border-diamond" x="348"/>
+        <use href="#border-diamond" x="372"/>
+        <use href="#border-diamond" x="396"/>
+        <use href="#border-diamond" x="420"/>
+        <use href="#border-diamond" x="444"/>
+        <use href="#border-diamond" x="468"/>
+        <use href="#border-diamond" x="492"/>
+        <use href="#border-diamond" x="516"/>
+        <use href="#border-diamond" x="540"/>
+        <use href="#border-diamond" x="564"/>
+        <use href="#border-diamond" x="588"/>
+        <use href="#border-diamond" x="612"/>
+        <use href="#border-diamond" x="636"/>
+        <use href="#border-diamond" x="660"/>
+        <use href="#border-diamond" x="684"/>
+        <use href="#border-diamond" x="708"/>
+    </g>
+</g>
+
+
+<g transform="translate(90,100)">
+
+    <g id="border-step-vert">
+        <rect x="0" y="0" width="6" height="6" fill="#001f3f"/>
+        <rect x="6" y="6" width="6" height="6" fill="#001f3f"/>
+        <rect x="12" y="12" width="6" height="6" fill="#001f3f"/>
     </g>
 
-    <!-- Repeat vertically -->
-    <use href="#motif" x="0" y="0"/>
-    <use href="#motif" x="0" y="60"/>
-    <use href="#motif" x="0" y="120"/>
-    <use href="#motif" x="0" y="180"/>
-    <use href="#motif" x="0" y="240"/>
-    <use href="#motif" x="0" y="300"/>
-    <use href="#motif" x="0" y="360"/>
-    <use href="#motif" x="0" y="420"/>
-    <use href="#motif" x="0" y="480"/>
-    <use href="#motif" x="0" y="540"/>
-    <use href="#motif" x="0" y="600"/>
-    <use href="#motif" x="0" y="660"/>
-    <use href="#motif" x="0" y="720"/>
-    <use href="#motif" x="0" y="780"/>
-    <use href="#motif" x="0" y="840"/>
-    <use href="#motif" x="0" y="900"/>
-    <use href="#motif" x="0" y="960"/>
-    <use href="#motif" x="0" y="1020"/>
-    <use href="#motif" x="0" y="1080"/>
-    <use href="#motif" x="0" y="1140"/>
-    <use href="#motif" x="0" y="1200"/>
-    <use href="#motif" x="0" y="1260"/>
-    <use href="#motif" x="0" y="1320"/>
-    <use href="#motif" x="0" y="1380"/>
-    <use href="#motif" x="0" y="1440"/>
-    <use href="#motif" x="0" y="1500"/>
-    <use href="#motif" x="0" y="1560"/>
-    <use href="#motif" x="0" y="1620"/>
-    <use href="#motif" x="0" y="1680"/>
-    <use href="#motif" x="0" y="1740"/>
-    <use href="#motif" x="0" y="1800"/>
+
+    <use href="#border-step-vert" y="0"/>
+    <use href="#border-step-vert" y="30"/>
+    <use href="#border-step-vert" y="60"/>
+    <use href="#border-step-vert" y="90"/>
+    <use href="#border-step-vert" y="120"/>
+    <use href="#border-step-vert" y="150"/>
+    <use href="#border-step-vert" y="180"/>
+    <use href="#border-step-vert" y="210"/>
+    <use href="#border-step-vert" y="240"/>
+    <use href="#border-step-vert" y="270"/>
+    <use href="#border-step-vert" y="300"/>
+    <use href="#border-step-vert" y="330"/>
+    <use href="#border-step-vert" y="360"/>
+    <use href="#border-step-vert" y="390"/>
+    <use href="#border-step-vert" y="420"/>
+    <use href="#border-step-vert" y="450"/>
+    <use href="#border-step-vert" y="480"/>
+    <use href="#border-step-vert" y="510"/>
+    <use href="#border-step-vert" y="540"/>
+    <use href="#border-step-vert" y="570"/>
+    <use href="#border-step-vert" y="600"/>
+    <use href="#border-step-vert" y="630"/>
+    <use href="#border-step-vert" y="660"/>
+    <use href="#border-step-vert" y="690"/>
+    <use href="#border-step-vert" y="720"/>
+    <use href="#border-step-vert" y="750"/>
+    <use href="#border-step-vert" y="780"/>
+    <use href="#border-step-vert" y="810"/>
+    <use href="#border-step-vert" y="840"/>
+    <use href="#border-step-vert" y="870"/>
+    <use href="#border-step-vert" y="900"/>
+    <use href="#border-step-vert" y="930"/>
+    <use href="#border-step-vert" y="960"/>
+    <use href="#border-step-vert" y="990"/>
+    <use href="#border-step-vert" y="1020"/>
+    <use href="#border-step-vert" y="1050"/>
+    <use href="#border-step-vert" y="1080"/>
+    <use href="#border-step-vert" y="1110"/>
+    <use href="#border-step-vert" y="1140"/>
+    <use href="#border-step-vert" y="1170"/>
+    <use href="#border-step-vert" y="1200"/>
+    <use href="#border-step-vert" y="1230"/>
+    <use href="#border-step-vert" y="1260"/>
+    <use href="#border-step-vert" y="1290"/>
+    <use href="#border-step-vert" y="1320"/>
+    <use href="#border-step-vert" y="1350"/>
+    <use href="#border-step-vert" y="1380"/>
+    <use href="#border-step-vert" y="1410"/>
+    <use href="#border-step-vert" y="1440"/>
+    <use href="#border-step-vert" y="1470"/>
+    <use href="#border-step-vert" y="1500"/>
+    <use href="#border-step-vert" y="1530"/>
+    <use href="#border-step-vert" y="1560"/>
+    <use href="#border-step-vert" y="1590"/>
+    <use href="#border-step-vert" y="1620"/>
+    <use href="#border-step-vert" y="1650"/>
+    <use href="#border-step-vert" y="1680"/>
+    <use href="#border-step-vert" y="1710"/>
+    <use href="#border-step-vert" y="1740"/>
+    <use href="#border-step-vert" y="1770"/>
+    <use href="#border-step-vert" y="1800"/>
+    <use href="#border-step-vert" y="1830"/>
+    <use href="#border-step-vert" y="1860"/>
+    <use href="#border-step-vert" y="1890"/>
+    <use href="#border-step-vert" y="1920"/>
+    <use href="#border-step-vert" y="1950"/>
+    <use href="#border-step-vert" y="1980"/>
+    <use href="#border-step-vert" y="2010"/>
+    <use href="#border-step-vert" y="2040"/>
+    <use href="#border-step-vert" y="2070"/>
+    <use href="#border-step-vert" y="2100"/>
+    <use href="#border-step-vert" y="2130"/>
+    <use href="#border-step-vert" y="2160"/>
+    <use href="#border-step-vert" y="2190"/>
+</g>
+
+
+<g transform="translate(910,100) scale(-1,1)">
+    <use href="#border-step-vert" y="0"/>
+    <use href="#border-step-vert" y="30"/>
+    <use href="#border-step-vert" y="60"/>
+    <use href="#border-step-vert" y="90"/>
+    <use href="#border-step-vert" y="120"/>
+    <use href="#border-step-vert" y="150"/>
+    <use href="#border-step-vert" y="180"/>
+    <use href="#border-step-vert" y="210"/>
+    <use href="#border-step-vert" y="240"/>
+    <use href="#border-step-vert" y="270"/>
+    <use href="#border-step-vert" y="300"/>
+    <use href="#border-step-vert" y="330"/>
+    <use href="#border-step-vert" y="360"/>
+    <use href="#border-step-vert" y="390"/>
+    <use href="#border-step-vert" y="420"/>
+    <use href="#border-step-vert" y="450"/>
+    <use href="#border-step-vert" y="480"/>
+    <use href="#border-step-vert" y="510"/>
+    <use href="#border-step-vert" y="540"/>
+    <use href="#border-step-vert" y="570"/>
+    <use href="#border-step-vert" y="600"/>
+    <use href="#border-step-vert" y="630"/>
+    <use href="#border-step-vert" y="660"/>
+    <use href="#border-step-vert" y="690"/>
+    <use href="#border-step-vert" y="720"/>
+    <use href="#border-step-vert" y="750"/>
+    <use href="#border-step-vert" y="780"/>
+    <use href="#border-step-vert" y="810"/>
+    <use href="#border-step-vert" y="840"/>
+    <use href="#border-step-vert" y="870"/>
+    <use href="#border-step-vert" y="900"/>
+    <use href="#border-step-vert" y="930"/>
+    <use href="#border-step-vert" y="960"/>
+    <use href="#border-step-vert" y="990"/>
+    <use href="#border-step-vert" y="1020"/>
+    <use href="#border-step-vert" y="1050"/>
+    <use href="#border-step-vert" y="1080"/>
+    <use href="#border-step-vert" y="1110"/>
+    <use href="#border-step-vert" y="1140"/>
+    <use href="#border-step-vert" y="1170"/>
+    <use href="#border-step-vert" y="1200"/>
+    <use href="#border-step-vert" y="1230"/>
+    <use href="#border-step-vert" y="1260"/>
+    <use href="#border-step-vert" y="1290"/>
+    <use href="#border-step-vert" y="1320"/>
+    <use href="#border-step-vert" y="1350"/>
+    <use href="#border-step-vert" y="1380"/>
+    <use href="#border-step-vert" y="1410"/>
+    <use href="#border-step-vert" y="1440"/>
+    <use href="#border-step-vert" y="1470"/>
+    <use href="#border-step-vert" y="1500"/>
+    <use href="#border-step-vert" y="1530"/>
+    <use href="#border-step-vert" y="1560"/>
+    <use href="#border-step-vert" y="1590"/>
+    <use href="#border-step-vert" y="1620"/>
+    <use href="#border-step-vert" y="1650"/>
+    <use href="#border-step-vert" y="1680"/>
+    <use href="#border-step-vert" y="1710"/>
+    <use href="#border-step-vert" y="1740"/>
+    <use href="#border-step-vert" y="1770"/>
+    <use href="#border-step-vert" y="1800"/>
+    <use href="#border-step-vert" y="1830"/>
+    <use href="#border-step-vert" y="1860"/>
+    <use href="#border-step-vert" y="1890"/>
+    <use href="#border-step-vert" y="1920"/>
+    <use href="#border-step-vert" y="1950"/>
+    <use href="#border-step-vert" y="1980"/>
+    <use href="#border-step-vert" y="2010"/>
+    <use href="#border-step-vert" y="2040"/>
+    <use href="#border-step-vert" y="2070"/>
+    <use href="#border-step-vert" y="2100"/>
+    <use href="#border-step-vert" y="2130"/>
+    <use href="#border-step-vert" y="2160"/>
+    <use href="#border-step-vert" y="2190"/>
+</g>
+
+
+
+
+<g id="cypress">
+    <polygon points="0,-40 15,-20 10,-10 20,0 10,10 15,20 0,40 -15,20 -10,10 -20,0 -10,-10 -15,-20"
+             fill="#c9a227"/>
+    <rect x="-5" y="-5" width="10" height="10" fill="black"/>
+</g>
+
+
+<g id="star">
+    <polygon points="0,-25 8,-8 25,0 8,8 0,25 -8,8 -25,0 -8,-8" fill="#fffdf8"/>
+    <rect x="-4" y="-4" width="8" height="8" fill="#8B0000"/>
+</g>
+
+
+<g id="diamond">
+    <polygon points="0,-20 20,0 0,20 -20,0" fill="#fffdf8"/>
+    <polygon points="0,-10 10,0 0,10 -10,0" fill="#c9a227"/>
+</g>
+
+
+<g id="flower">
+    <polygon points="0,-15 15,0 0,15 -15,0" fill="#1f7a3b"/>
+    <rect x="-4" y="-4" width="8" height="8" fill="#fffdf8"/>
+</g>
+
+
+<g id="tiny">
+    <rect x="-3" y="-3" width="6" height="6" fill="#fffdf8"/>
+    <rect x="-1" y="-8" width="2" height="5" fill="#c9a227"/>
+    <rect x="-1" y="3" width="2" height="5" fill="#c9a227"/>
+    <rect x="-8" y="-1" width="5" height="2" fill="#c9a227"/>
+    <rect x="3" y="-1" width="5" height="2" fill="#c9a227"/>
+</g>
+
+<g transform="translate(140,120)">
+
+    <use href="#cypress" x="0" y="0"/>
+    <use href="#star" x="80" y="0"/>
+    <use href="#diamond" x="160" y="0"/>
+    <use href="#flower" x="240" y="0"/>
+    <use href="#cypress" x="320" y="0"/>
+    <use href="#star" x="400" y="0"/>
+    <use href="#diamond" x="480" y="0"/>
+    <use href="#flower" x="560" y="0"/>
+    <use href="#cypress" x="640" y="0"/>
+
+
+    <use href="#diamond" x="0" y="60"/>
+    <use href="#flower" x="80" y="60"/>
+    <use href="#cypress" x="160" y="60"/>
+    <use href="#star" x="240" y="60"/>
+    <use href="#diamond" x="320" y="60"/>
+    <use href="#flower" x="400" y="60"/>
+    <use href="#cypress" x="480" y="60"/>
+    <use href="#star" x="560" y="60"/>
+    <use href="#diamond" x="640" y="60"/>
+
+
+    <g id="A">
+        <use href="#cypress" x="0"/>
+        <use href="#star" x="80"/>
+        <use href="#diamond" x="160"/>
+        <use href="#flower" x="240"/>
+        <use href="#cypress" x="320"/>
+        <use href="#star" x="400"/>
+        <use href="#diamond" x="480"/>
+        <use href="#flower" x="560"/>
+        <use href="#cypress" x="640"/>
+    </g>
+
+    <g id="B">
+        <use href="#diamond" x="0"/>
+        <use href="#flower" x="80"/>
+        <use href="#cypress" x="160"/>
+        <use href="#star" x="240"/>
+        <use href="#diamond" x="320"/>
+        <use href="#flower" x="400"/>
+        <use href="#cypress" x="480"/>
+        <use href="#star" x="560"/>
+        <use href="#diamond" x="640"/>
+    </g>
+
+
+    <use href="#A" y="120"/>
+    <use href="#B" y="180"/>
+    <use href="#A" y="240"/>
+    <use href="#B" y="300"/>
+    <use href="#A" y="360"/>
+    <use href="#B" y="420"/>
+    <use href="#A" y="480"/>
+    <use href="#B" y="540"/>
+    <use href="#A" y="600"/>
+    <use href="#B" y="660"/>
+    <use href="#A" y="720"/>
+    <use href="#B" y="780"/>
+    <use href="#A" y="840"/>
+    <use href="#B" y="900"/>
+    <use href="#A" y="960"/>
+    <use href="#B" y="1020"/>
+    <use href="#A" y="1080"/>
+    <use href="#B" y="1140"/>
+    <use href="#A" y="1200"/>
+    <use href="#B" y="1260"/>
+    <use href="#A" y="1320"/>
+    <use href="#B" y="1380"/>
+    <use href="#A" y="1440"/>
+    <use href="#B" y="1500"/>
+    <use href="#A" y="1560"/>
+    <use href="#B" y="1620"/>
+    <use href="#A" y="1680"/>
+    <use href="#B" y="1740"/>
+    <use href="#A" y="1800"/>
+    <use href="#B" y="1860"/>
+    <use href="#A" y="1920"/>
+    <use href="#B" y="1980"/>
 </g>
 
 </svg>
 
 </div>
+</div>
 
 </body>
 </html>
+
